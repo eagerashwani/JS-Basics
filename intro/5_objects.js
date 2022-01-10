@@ -37,6 +37,7 @@ let mrStark = {
         city : 'Melibo',
         state : 'California'
     },
+
     owner : 'Stark Industries',
 
     isAvenger : true,
@@ -53,4 +54,29 @@ console.log(mrStark.owner),
 console.log(mrStark.name),
 
 // Bracket Notation
-console.log(mrStark.knownAs)
+console.log(mrStark.knownAs),
+
+console.log('Genetic father of', mrStark.fatherOf[1]),
+console.log(mrStark.Address.city),
+
+mrStark.lastMessage()
+
+
+// for in loop
+
+for(let keys in mrStark){
+    console.log("Keys:", keys, "Value:", mrStark[keys])
+}
+
+// Update an object
+mrStark.isAvenger = false
+
+
+
+//Add new property
+mrStark.mentor = 'Spiderman'
+
+
+// Delete an property
+delete mrStark.owner
+console.log(mrStark)
