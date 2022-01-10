@@ -16,3 +16,41 @@ let cars = {
     max_speed : '240 km/h',
     color : 'red and black'
 }
+
+
+// Mr Stark - Avengers
+
+let mrStark = {
+    name : 'Tony Stark',
+    knownAs : 'IronMan',
+    about : [
+        'Genius',
+        'Billionaire',
+        'Playboy',
+        'Philanthropist'
+    ],
+    fatherOf : [
+        'Ultron',
+        'Morgan Stark'
+    ],
+    Address : {
+        city : 'Melibo',
+        state : 'California'
+    },
+    owner : 'Stark Industries',
+
+    isAvenger : true,
+
+    lastMessage : function(){
+        console.log('I Love you 3000')
+
+    }
+}
+
+
+// dot notation
+console.log(mrStark.owner),
+console.log(mrStark.name),
+
+// Bracket Notation
+console.log(mrStark.knownAs)
