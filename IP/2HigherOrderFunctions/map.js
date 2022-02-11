@@ -1,4 +1,18 @@
+//* HOF are the function that operates on other function
+// HOF sirf arrays par hi lgte hai
+// HOF apni or inside function ki properties ko array par lga deta hai
+// Higher order functions in JS are for Arrays,
 
+// In simple words a higher order function is a function that recieves a function as an arugument
+// or returns the function as output 
+
+
+// Map
+
+// map is itself a function which is predefined in js
+//map takes a callback function as an Argumenet
+//map will call the callback function as many times as the elemets of the array
+//map will retur a new Array
 let arr = [2,4,6,8,9]
 
 let cubeArr = arr.map(function(n){
