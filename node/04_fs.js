@@ -46,4 +46,4 @@ const path = require('path')
 
 //Copying files from src to dest
 
-let srcFilePath 
+let srcFilePath = fileSystem.copyFileSync

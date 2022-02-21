@@ -54,7 +54,7 @@ console.log(mrStark.owner),
 console.log(mrStark.name),
 
 // Bracket Notation
-console.log(mrStark.knownAs),
+console.log(mrStark.knownAs()),
 
 console.log('Genetic father of', mrStark.fatherOf[1]),
 console.log(mrStark.Address.city),

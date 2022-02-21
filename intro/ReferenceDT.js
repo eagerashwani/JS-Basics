@@ -16,7 +16,8 @@ function hello(){
 }
 console.log(hello,typeof(hello))
 
-//Javascript has 3 data types that are passed by reference: Array, Function, and Object. These are all ///technically Objects, so we’ll refer to them collectively as Objects.
+//Javascript has 3 data types that are passed by reference: Array, Function, and Object. 
+//These are all technically Objects, so we’ll refer to them collectively as Objects.
 
 
 //Call by Reference

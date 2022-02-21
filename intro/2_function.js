@@ -24,8 +24,7 @@ function mul(a,b){
 function divide(a,b){
     console.log(a/b)
 }
-
-// // functions are treated as first class citizen in JavaScript
+ // functions are treated as first class citizen in JavaScript
 
 // let sayHi = function(){ // anonymous function
 //      console.log('Hi')

@@ -1,7 +1,7 @@
 // Stirng is a sequence of characters
 
 
-
+let str = 'pepcoding'
 //console.log(str) // prints pepcoders
 
 
@@ -21,10 +21,10 @@
 // let slicedStr = str.slice(3)
 // console.log(slicedStr)
 
-// // extarct pep from the str
+// extarct pep from the str
 
-// let pepstring = str.slice(0 ,3)
-// console.log(pepstring)
+let pepstring = str.slice(0 ,3)
+console.log(pepstring)
 
 
 //2.subStr
@@ -71,11 +71,11 @@
 
 //Trim method is used to remove all the whiteSpaces
 
-let text = 'Hello World'
+// let text = 'Hello World'
 
-let trimmedText = text.trim()
+// let trimmedText = text.trim()
 
-console.log(text)
-console.log(trimmedText)
+// console.log(text)
+// console.log(trimmedText)
 
 
