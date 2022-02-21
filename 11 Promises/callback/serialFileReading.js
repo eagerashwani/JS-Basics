@@ -10,6 +10,7 @@ function cb1(err,data){
     }else{
         console.log("Data is "+ data)
         fs.readFile('f2.txt',cb2)
+       
     }
 }
 
