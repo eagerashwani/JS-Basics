@@ -1,7 +1,7 @@
 const loginLink = "https://www.hackerrank.com/auth/login";
 const puppeteer = require("puppeteer");
 
-console.log("Before")
+console.log("Before");
 let email = "hekag50503@submic.com";
 let password = "password";
 
@@ -38,23 +38,33 @@ browerLaunch
   .then(function () {
     let buttonClick = page.click('button[data-analytics="LoginPassword"]');
     return buttonClick;
-    let algoSecClickedPromise = waitAndClick('a[data-attr1="python"]' , page)
-    return algoSecClickedPromise
+  })
+  .then(function () {
+    let algoSecClickedPromise = waitAndClick('a[data-attr1="algorithms"]', page);
+    return algoSecClickedPromise;
+  })
+  .then(function () {
+    let warmupClick = waitAndClick('input[value="warmup"]', page)
+    return warmupClick
   }).then(function(){
-    console.log('Algo Section Clicked')
+    console.log("Clicked")
   });
 
+function waitAndClick(selector, cPage) {
+  return new Promise(function (resolve, reject) {
+    let waitForModalPromise = cPage.waitForSelector(selector);
+    waitForModalPromise
+      .then(function () {
+        let clickModal = cPage.click(selector, { delay: 100 });
+        return clickModal;
+      })
+      .then(function () {
+        resolve();
+      })
+      .catch(function () {
+        reject();
+      });
+  });
+}
 
-
-  function waitAndClick(selector , cPage){
-    return new Promise(function(resolve , reject){
-      let waitForModalPromise = cPage.waitForSelector(selector)
-      waitForModalPromise.then(function(){
-        let clickModal = cPage.click(selector , {delay : 100})
-         return clickModal
-      }).then(function(){ resolve()}).catch(function(){reject()})
-    })
-  }
-
-  
-  console.log("After")
+console.log("After");
